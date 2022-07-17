@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1563752274 source:e:\new folder (2)\vector\main.cpp
+	"Vector.h"
+
+1563752236 source:e:\new folder (2)\vector\src\vector.cpp
+	"Vector.h"
+
+1563752344 e:\new folder (2)\vector\include\vector.h
+	<iostream>
+	<stdlib.h>
+	<ctime>
+	<cstdlib>
+	<string>
+	<iomanip>
+	<sstream>
+	<Vector>
+
+1563900602 source:e:\vector\main.cpp
+	"Vector.h"
+
+1563918300 e:\vector\include\vector.h
+	<iostream>
+	<stdlib.h>
+	<ctime>
+	<cstdlib>
+	<string>
+	<iomanip>
+	<sstream>
+	<Vector>
+
+1563900432 source:e:\vector\src\vector.cpp
+	"Vector.h"
+
+1563900602 source:c:\users\r201b-26\downloads\vector\main.cpp
+	"Vector.h"
+
+1563918300 c:\users\r201b-26\downloads\vector\include\vector.h
+	<iostream>
+	<stdlib.h>
+	<ctime>
+	<cstdlib>
+	<string>
+	<iomanip>
+	<sstream>
+	<Vector>
+
+1563900432 source:c:\users\r201b-26\downloads\vector\src\vector.cpp
+	"Vector.h"
+

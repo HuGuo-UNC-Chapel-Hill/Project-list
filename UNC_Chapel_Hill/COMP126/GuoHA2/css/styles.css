@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #5d6063;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+/* class */
+.yellow-back {
+  background-color: rgb(218, 218, 89);
+}
+
+.black-back {
+  background-color: black;
+}
+
+/* float */
+.floated-box {
+  float: left;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.3rem;
+}
+
+header {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+header > h1 {
+  font-size: 1.2rem;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  color: rgb(218, 218, 89);
+}
+
+/* breakpoint for 600px */
+@media (min-width: 600px) {
+  header > h1 {
+    font-size: 6vw;
+    font-weight: bold;
+  }
+}
+
+/* breakpoint for 900px */
+@media screen and (min-width: 900px) {
+  header > h1 {
+    font-size: 54px;
+  }
+}
+article {
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 5px;
+  position: relative;
+}
+
+.article-image {
+  width: 90%;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+}
+
+img {
+  width: 30%;
+  margin-left: 2%;
+}
+.card {
+  width: 100%;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+/* breakpoint for 600px */
+@media screen and (min-width: 600px) {
+  article {
+    overflow: hidden;
+  }
+  
+  .article-image {
+    margin-top: 4.5vw;
+    float: left;
+    width: 30%;
+    display: block;
+    height: 50.5vw;
+  }
+  
+  img {
+    width: 100%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6%;
+  }
+  .card {
+    margin-left: 2%;
+    float: left;
+    width: 65%;
+    height: 58vw;
+  }
+}
+
+/* breakpoint for 900px */
+@media screen and (min-width: 900px) {
+  article {
+    width: 810px;
+  }
+  .article-image {
+    margin-top: 33.525px;
+    width: 270px;
+    height: 454.5px;
+  }
+  img {
+    margin-bottom:22px;
+  }
+  .card{
+    width: 484.25px;
+    height: 522px;
+  }
+}
+
+.card h3 {
+  font-size: 0.8rem;
+}
+
+/* breakpoint for 600px */
+@media screen and (min-width: 600px) {
+  .card h3 {
+    font-size: 3vw;
+  }
+}
+
+/* breakpoint for 900px */
+@media screen and (min-width: 900px) {
+  .card h3 {
+    font-size: 27px;
+  }
+}
+
+
+p {
+  width: 100%;
+  margin: 0px auto;
+  display: block;
+  font-size: 0.7rem;
+  padding: 2%;
+}
+
+/* breakpoint for 600px */
+@media screen and (min-width: 600px) {
+  p {
+    font-size: 1.8vw;
+  }
+}
+
+/* breakpoint for 900px */
+@media screen and (min-width: 900px) {
+  p {
+    font-size: 17px;
+  }
+}
+
+footer {
+  
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 5px;
+  clear: both;
+  
+}
+
+footer h2 {
+  margin: auto;
+  color: rgb(218, 218, 89);
+  font-size: 0.9rem;
+  position: relative;
+  top: 1vw;
+  
+}
+
+/* breakpoint for 600px */
+@media screen and (min-width: 600px) {
+  footer h2 {
+    font-size: 4vw;
+  }
+}
+
+/* breakpoint for 900px */
+@media screen and (min-width: 900px) {
+  footer h2 {
+    font-size: 36px;
+    height: 90px;
+    position: relative;
+    top: 15.5px;
+  }
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+.nav li {
+  display: inline-block;
+  margin-left: 2%;
+  font-size: smaller;
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* breakpoint for 600px */
+@media screen and (min-width: 600px) {
+  .nav li {
+    font-size: 3vw;
+    font-weight: bold;
+    padding: auto;
+    margin-left: 5%;
+  }
+}
+
+/* breakpoint for 900px */
+@media screen and (min-width: 900px) {
+  .nav li {
+    font-size: 27px;
+  }
+  
+}
+
+.botton {
+  border: 2px solid #5d6063;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 15px 20px;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+/* breakpoint for 600px */
+@media screen and (min-width: 600px) {
+  .botton {
+    font-size: 2.5vw;
+  }
+}
+
+/* breakpoint for 900px */
+@media screen and (min-width: 900px) {
+  .botton {
+    font-size: 22.5px;
+  }
+}
+
+.filler {
+  width: 2%;
+}
+
+a {
+  text-decoration: none;
+  background-color: rgb(218, 218, 89);
+  border: 2px solid #5d6063;
+  border-radius: 5px;
+}
+
+/* pseudo-classes */
+a:link {
+  color: #5d6063;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* pseudo-classes */
+a:visted {
+  color: purple;
+}
+
+/* pseudo-classes */
+a:hover {
+  color: rgb(218, 218, 89);
+  background-color: black;
+}
+
+/* add :focus with :hover */
+a:focus      {
+  color: rgb(218, 218, 89);
+  background-color: black;
+}
+
+a:active {
+  color: aqua;
+}
+
+.botton:hover {
+  color: black;
+  background-color: rgb(218, 218, 89);
+}
+
+/* add :focus with :hover */
+.botton:focus {
+  color: black;
+  background-color: rgb(218, 218, 89);
+}

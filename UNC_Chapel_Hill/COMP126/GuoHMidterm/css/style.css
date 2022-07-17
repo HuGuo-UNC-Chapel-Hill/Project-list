@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+.item {
+    border-radius: 3%;
+    border: 1px solid orange;
+}
+
+.container {
+    width: 90vw;
+    height: 90vh;
+    margin: 3vh auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.container > * {
+    flex-basis: 100%;
+}
+
+
+.grid_parent {
+    display: grid;
+    grid-template-columns: 1.5rem 1fr 1rem 1fr 1.5rem;
+    grid-template-rows: 1.5rem 1fr 1rem 1fr 1.5rem;
+    background-color: rgb(63, 63, 63);
+}
+
+
+.apple {
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+    background: url(../img/apple.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+.cantaloupe {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    background: url(../img/cantaloupe.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+.watermelon {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+    background: url(../img/watermelon.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+
+
+.flex_parent {
+    display: flex;
+    background-color: rgb(63, 63, 63);
+}
+
+.pups {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin: 1.5rem 1.5rem;
+    border: 2px solid rosybrown;
+}
+
+.pups > * {
+    width: 100%;
+    height: 33%;
+}
+
+.pup_one { 
+    background: url(../img/pup_one.png);
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    
+}
+
+.pup_two { 
+    background: url(../img/pup_two.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pup_three { 
+    background: url(../img/pup_three.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    
+}
+
+@media screen and (min-width: 500px) and (max-width: 760px) {
+    .pups {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    
+    .pup_one {
+        height: 48%;
+        align-self: flex-start;
+        background-size: 120% 100% ;
+    }
+    
+    .pup_two, .pup_three{
+        height: 48%;
+        width: 48%;
+        flex-basis: 45%;
+        align-self: flex-end;
+        background-size: 170% 100% ;
+    }
+    
+}
+
+@media screen and (min-width: 760px) and (max-width: 960px) {
+    .pups {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    
+    .pup_one {
+        width: 57%;
+        height: 48%;
+        background-size: 150% 100% ;
+    }
+    
+    .pup_two{
+        height: 48%;
+        width: 35%;
+        align-self: flex-end;
+        background-size: 130% 100% ;
+    }
+    
+    .pup_three{
+        height: 48%;
+        width: 100%;
+        background-size: 120% 100% ;
+        align-self: flex-end;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .pups {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    
+    .pup_one {
+        width: 42%;
+        height: 100%;
+        background-size: 150% 100% ;
+       
+    }
+    
+    .pup_two{
+        width: 24%;
+        height: 100%;
+        background-size: 220% 100% ;
+    
+    }
+
+    .pup_three{
+        width: 24%;
+        height: 100%;
+        background-size: 180% 100% ;
+       
+    }
+}

@@ -1,0 +1,12 @@
+# Build files
+*.o
+*.out
+negate-2
+signed
+twos
+
+# macOS
+.DS_Store
+
+# IDE
+.idea

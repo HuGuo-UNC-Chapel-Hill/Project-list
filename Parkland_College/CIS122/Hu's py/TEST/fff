@@ -1,0 +1,43 @@
+def blendPictures(pict1, pict2, overlapAmt):
+  width1 = getWidth(pict1)
+  height1 = getHeight(pict1)
+  width2 = getWidth(pict2)
+  height2 = getHeight(pict2)
+  
+  # Set up width and height for new canvas
+  newWidth = width1 + width2 - overlapAmt
+  newHeight = min(height1, height2)
+
+  # Create the canvas to hold the blended pictures
+  newCanvas = makeEmptyPicture(newWidth, newHeight)
+
+  # Copy the first picture up to the overlap section
+  for x in range(width1 - overlapAmt):
+    for y in range(newHeight): 
+      color = getColor(getPixel(pict1, x, y))
+      setColor(getPixel(newCanvas, x, y), color)
+
+  # Copy the blended section
+  # 50% pict1 and 50% pict2
+  pict2_x = 0
+  for pict1_x in range(width1 - overlapAmt, width1):
+    for y in range(newHeight):
+      pixel1 = getPixel(pict1, pict1_x, y)
+      pixel2 = getPixel(pict2, pict2_x, y)
+      newRed = 0.50 * getRed(pixel1) + 0.50 * getRed(pixel2)
+      newGreen = 0.50 * getGreen(pixel1) + 0.50 * getGreen(pixel2)
+      newBlue = 0.50 * getBlue(pixel1) + 0.50 * getBlue(pixel2)
+      color = makeColor(newRed, newGreen, newBlue)
+      setColor(getPixel(newCanvas, pict1_x, y), color)
+    pict2_x = pict2_x + 1
+
+  # Copy the remaining section of pict2
+  targetX = width1
+  for x in range(overlapAmt, width2):
+    for y in range(newHeight):
+      color = getColor(getPixel(pict2, x, y))
+      setColor(getPixel(newCanvas, targetX, y), color)
+    targetX = targetX + 1
+
+  # Return the new canvas
+  return newCanvas

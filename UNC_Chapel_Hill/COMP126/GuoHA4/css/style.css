@@ -1,0 +1,245 @@
+/* import Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    min-width: 300px;
+    
+}
+
+header {
+  height: 22vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header logo {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  height: 96px;
+}
+
+header h1 {
+  color: rgb(218, 218, 89);
+  align-self: center;
+  font-family: "Robot", sans-serif;
+  font-weight: 600;
+}
+
+main {
+  height: 68vh;
+  display: grid;
+  grid-template-columns: 4vw 1fr 4vw;
+  grid-template-rows: 4vh 1fr 2vh 4fr 5vh;
+}
+
+nav {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  width: 90%;
+  min-height: 33px;
+  height: 60%;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav ul li {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  font-family: "Robot", sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: black;
+  background-color: rgb(218, 218, 89);
+  text-decoration: underline dotted;
+  transition: background-color 700ms linear;
+  border: 3px solid black;
+}
+
+.card {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  background-color: rgb(235, 235, 235);
+}
+
+/* .submit {
+  grid-column: 2 / 3;
+  grid-row: 8 / 9;
+  font-family: "Robot", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: black;
+  background: linear-gradient(to right, lightblue, yellow);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 300ms;
+} */
+
+nav ul li a:hover {
+  background-color: black;
+  color: rgb(218, 218, 89);
+  border: 3px solid rgb(218, 218, 89);
+  text-decoration: underline;
+  box-shadow: 0px 3px black;
+}
+
+form {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: "Robot", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+fieldset {
+  border: none;
+}
+
+.filler {
+  height: 20px;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: 3px solid transparent;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 14px;
+  width: 100%;
+  color: rgb(218, 218, 89);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.04);
+  margin-bottom: 30px;
+  caret-color: rgb(218, 218, 89);
+  transition: border 400ms, background-color 400ms, box-shadow 400ms;
+}
+
+input:hover,
+input:focus {
+  border: 3px solid rgb(218, 218, 89);
+  background-color: black;
+  box-shadow: 0px 3px black;
+}
+
+button {
+  padding: 15px;
+  width: 100%;
+  border-radius: 5px;
+  font-family: "Robot", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: black;
+  text-shadow: 0 2px rgb(218, 218, 89);
+  border: 3px solid rgb(218, 218, 89);
+  background-image: linear-gradient(to right, black, rgb(218, 218, 89),black);
+  background-size: 200%;
+  background-position: 0% 0%;
+  transition: background-position 1s ease, color 1s ease, border 1s ease,
+  text-shadow 1s ease, box-shadow 1s ease;
+}
+
+button:hover,
+button:focus {
+    background-position: right;
+    color: rgb(218, 218, 89);
+    border: 3px solid black;
+    text-shadow: 0 2px black;
+  box-shadow: 0px 3px black;
+}
+
+footer {
+    height: 10vh;
+    background-color: black;
+    color: rgb(218, 218, 89);
+  text-align: center;
+  font-family: "Robot", sans-serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 650px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    height: 60vh;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    margin-top: 7vh;
+    margin-right: 0;
+    margin-left: 4vw;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 4vh;
+  }
+
+  nav ul li {
+    width: 100%;
+    height: 6vh;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+    height: 7vh;
+  }
+
+  .card {
+    width: 69%;
+    height: 90%;
+    align-self: center;
+  }
+
+  footer {
+    height: 18vh;
+  }
+}

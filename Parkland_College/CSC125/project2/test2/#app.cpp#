@@ -1,0 +1,17 @@
+#include "Account.h"
+#include "Person.h"
+
+
+int main()
+{
+
+  Person per[20];
+  per[0].setBala(10);
+  per[0].setSsn("123456");
+  per[0].accPrint();
+  cout<<endl;
+  per[0].perPrint();
+  cout<<endl;
+  return 0;
+}
+

@@ -1,0 +1,315 @@
+/* import Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    min-width: 375px;
+    margin: 20px 20px;
+    background-color: #d6d6d6;
+}
+
+header {
+    height: 25vh;
+    width: 100%;
+    background-color: #023047;
+    display: grid;
+    grid-template-columns: 10px 40% 10px 55% 10px;
+    grid-template-rows: 10% 1fr 10%;
+}
+
+header .logo {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+header .title {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+} 
+
+header .title h1 {
+    font-size: 28px;
+    font-family: "Robot", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* study the codes from the video on Youtube:  https://www.youtube.com/watch?v=ANKNNKPJAMI */
+.color_changing {
+    background: linear-gradient(90deg, #8ECAE6, #219EBC, #ffb703, #219EBC);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: changing 4s linear infinite;
+}
+
+@keyframes changing {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    header .title h1 {
+        font-size: 35px;
+    }
+}
+
+main {
+    width: 100%;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr;
+    grid-template-rows: 25vh 8vh 20px 25vh 8vh 20px 25vh 8vh;
+}
+
+main .card_attractions {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: #023047;
+    background-image: url(../img/attractions.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    background-position-y: -25px;
+}
+
+main .button_attractions {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: #023047;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .card_maps {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    background-color: #023047;
+    background-image: url(../img/map.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    background-position-y: 40%;
+}
+
+main .button_maps {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-color: #023047;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .card_services {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    background-color: #023047;
+    background-image: url(../img/service.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    background-position-y: 40%;
+}
+
+main .button_services {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    background-color: #023047;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .card_disability {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    background-color: #023047;
+    background-image: url(../img/accessibility.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    background-position-y: 30%;
+}
+
+main .button_disability {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+    background-color: #023047;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .card_weather {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+    background-color: #023047;
+    background-image: url(../img/weather.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+main .button_weather {
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+    background-color: #023047;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .card_ticket {
+    grid-column: 3 / 4;
+    grid-row: 7 / 8;
+    background-color: #023047;
+    background-image: url(../img/ticket.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    background-position-y: 30%;
+}
+
+main .button_ticket {
+    grid-column: 3 / 4;
+    grid-row: 8 / 9;
+    background-color: #023047;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 750px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 20px 1fr 20px 1fr;
+        grid-template-rows: 25vh 8vh 20px 25vh 8vh;
+    }
+
+    main .card_attractions {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    main .button_attractions {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    main .card_maps {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+    main .button_maps {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+    main .card_services {
+        grid-column: 5 / 6;
+        grid-row: 1 / 2;
+    }
+
+    main .button_services {
+        grid-column: 5 / 6;
+        grid-row: 2 / 3;
+    }
+
+    main .card_disability {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    main .button_disability {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+
+    main .card_weather {
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+    }
+
+    main .button_weather {
+        grid-column: 3 / 4;
+        grid-row: 5 / 6;
+    }
+
+    main .card_ticket {
+        grid-column: 5 / 6;
+        grid-row: 4 / 5;
+    }
+
+    main .button_ticket {
+        grid-column: 5 / 6;
+        grid-row: 5 / 6;
+    }
+}
+
+footer {
+    height: 7vh;
+    background-color: #023047;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h2 {
+    color: #ffb703;
+    font-family: "Robot", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+main a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+    font-family: "Robot", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffb703;
+    text-decoration: none;
+    transition: background-color 700ms ease-in-out, color 700ms ease-in-out,
+        border 500ms ease-in-out;
+    border: 4px solid #ffb703;
+}
+
+main a:hover,
+a:focus {
+    background-color: #ffb703;
+    color: #023047;
+    border: 4px solid #023047;
+}
+
+@media screen and (min-width: 750px) {
+    main a {
+        max-width: 65%;
+    }
+
+    footer h2 {
+        font-size: 22px;
+    }
+}

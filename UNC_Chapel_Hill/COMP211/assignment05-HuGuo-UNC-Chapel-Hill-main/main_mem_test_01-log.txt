@@ -1,0 +1,54 @@
+Operation Log: 
+READ word 0 as value 0x0
+READ word 1 as value 0x0
+READ word 2 as value 0x0
+READ word 3 as value 0x0
+READ word 4 as value 0x0
+READ word 5 as value 0x0
+READ word 6 as value 0x0
+READ word 7 as value 0x0
+READ word 8 as value 0x0
+READ word 9 as value 0x0
+READ word 10 as value 0x0
+READ word 11 as value 0x0
+READ word 12 as value 0x0
+READ word 13 as value 0x0
+READ word 14 as value 0x0
+READ word 15 as value 0x0
+WRITE word 0 as value 0x7cd27462
+WRITE word 1 as value 0x68aeb834
+WRITE word 2 as value 0x87517e9e
+WRITE word 3 as value 0xd50448ee
+WRITE word 4 as value 0xe88f531f
+WRITE word 5 as value 0x97c9bf51
+WRITE word 6 as value 0x2b1469d5
+WRITE word 7 as value 0x7721faef
+WRITE word 8 as value 0x84a66278
+WRITE word 9 as value 0x132d8e54
+WRITE word 10 as value 0xd5af965e
+WRITE word 11 as value 0x298ee88
+WRITE word 12 as value 0x27ee1026
+WRITE word 13 as value 0x9ed0f871
+WRITE word 14 as value 0xb8891f1f
+WRITE word 15 as value 0xa671515f
+
+Operation Counts: READ, WRITE
+1, 1
+1, 1
+1, 1
+1, 1
+1, 1
+1, 1
+1, 1
+1, 1
+1, 1
+1, 1
+1, 1
+1, 1
+1, 1
+1, 1
+1, 1
+1, 1
+
+Total reads 16
+Total writes 16

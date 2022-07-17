@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #5d6063;
+  box-sizing: border-box;
+}
+
+/* class */
+.yellow-back {
+  background-color: rgb(218, 218, 89);
+}
+
+.black-back {
+  background-color: black;
+}
+
+/* float */
+.floated-box {
+  float: left;
+}
+
+.one {
+  width: 25%;
+  margin-top: 2%;
+  margin-right: 1%;
+}
+
+.two {
+  width: 65%;
+}
+
+.three {
+  width: 25%;
+  float: right;
+}
+
+header {
+  height: 130px;
+  
+  /* position property */
+  position: relative;
+}
+
+.header-block {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
+}
+
+header > img {
+  height: 100%;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: rgb(218, 218, 89);
+  padding: 20px;
+  
+  /* position property */
+  position: absolute;
+  left: 30%;
+  width:60%;
+}
+
+header ul {
+  /* position property */
+  position:absolute;
+  top: 60%;
+  left: 32%;
+}
+
+header ul li {
+  font-size: medium;
+
+  /* CSS' box model property */
+  display: inline;
+
+  margin-left: 30px;
+  background-color: rgb(218, 218, 89);
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid #5d6063;
+  border-radius: 5px;
+  width: 150px;
+  box-sizing: border-box;
+}
+
+/* ID in the index.html*/
+#ip-email {
+  background-color: rgb(218, 218, 89);
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid rgb(58, 58, 58);
+  border-radius: 5px;
+  width: 60%;
+  box-sizing: border-box;
+  margin-left: 110px;
+}
+
+article h3 {
+  /* CSS' box model property */
+  display: inline;
+
+  /* position property */
+  position: relative;
+  left: 10px;
+  top: 5px;
+}
+
+article > p { 
+  margin: 5px;
+
+} 
+
+article > p::first-letter {
+  font-size: 1.2rem;
+  color: blue;
+  font-weight: bold;
+}
+
+.p-pic {
+  margin: 10px;
+  width: 30%;
+}
+
+.fill {
+  height: 0.5rem;
+}
+
+footer {
+  clear: both;
+  height: 70px;
+  margin-left: 100px;
+  margin-right: 100px;
+
+  /* position property */
+  position: relative;
+  top: 10px;
+}
+
+footer > h2 {
+  color: rgb(218, 218, 89);
+  text-align: center;
+
+  /* position property */
+  position: relative;
+  top: 20px;
+}
+
+article > img {
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  background-color: rgb(218, 218, 89);
+}
+
+/* pseudo-classes */
+a:link {
+  color: blue;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+/* pseudo-classes */
+a:visted {
+  color: purple;
+}
+
+/* pseudo-classes */
+a:hover {
+  color:rgb(58, 58, 58);
+  padding: 1px; 
+  border: 1px solid rgb(58, 58, 58);
+  border-radius: 5px;
+}
+
+a:active {
+  color: aqua;
+}
+

@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>M23 MST hguo5</title>
+    </head>
+    <body>
+    <div align = "center">
+	<h3>M23 MST hguo5</h3>
+<table bgcolor="" border="10" cellpadding="5">
+<tr>
+<td> Enter paragraph below.</td>
+<td> Test Example.</td>
+</tr>
+<tr>
+<td>
+<form action='M23_test.py' method='POST'>
+<textarea rows='19' cols='50' name='bigbox'></textarea>
+	<input type='submit' name='submit' value='Process text'>
+	
+</form>
+</td>
+<td>
+<form action='M23_test.py' method='POST'>
+<textarea rows='19' cols='50' name='bigbox'>vertex1
+vertex2
+vertex3
+vertex4
+vertex5
+vertex6
+#end
+vertex1, vertex2, 3.4
+vertex1, vertex3, 9.2
+vertex2, vertex3, 2.8
+vertex3, vertex4, 3.5
+vertex1, vertex4, 11.2
+vertex4, vertex5, 4.5
+vertex5, vertex6, 3.5
+vertex4, vertex6, 18.3
+vertex1, vertex6, 8.9
+</textarea>
+	<input type='submit' name='submit' value='Process text'>
+	
+</form>
+</td>
+</tr>
+</tr>
+<tr>
+<td> Ignore Duplicate Vertex</td>
+<td> Ignore Invalid Edges</td>
+</tr>
+<tr>
+<td>
+<form action='M23_test.py' method='POST'>
+<textarea rows='14' cols='50' name='bigbox'>vertex1
+vertex2
+vertex3
+vertex4
+vertex4
+#end
+vertex1, vertex2, 1
+vertex2, vertex3, 2.3
+vertex2, vertex4, 8.1
+vertex3, vertex4, 9.5
+vertex4, vertex1, 6.2
+</textarea>
+	<input type='submit' name='submit' value='Process text'>
+
+</form>
+</td>
+<td>
+<form action='M23_test.py' method='POST'>
+<textarea rows='14' cols='50' name='bigbox'>vertex1
+vertex2
+vertex3
+vertex4
+#end
+vertex1, vertex2, 1
+csc220, mat 128
+vertex2, vertex3, 2.3
+vertex2, vertex4, 8.1
+vertex3, vertex4, 9.5
+vertex4, vertex1, 6.2
+</textarea>
+	<input type='submit' name='submit' value='Process text'>
+
+</form>
+</td>
+</tr>
+</table>
+    </div>
+    </body>
+</html>
